@@ -1,0 +1,21 @@
+{
+  "redirects": [
+    {
+      "name": "あまいろパステル開発者ページ",
+      "id": "amapas",
+      "url": "https://amairopastel.meigetsu.jp/"
+    },
+    {
+      "name": "ときめきアイドルスコアランキング",
+      "id": "tokidol",
+      "url": "https://www.tokidolranking.meigetsu.jp/",
+      "image": "tokidolranking.jpg"
+    },
+    {
+      "name": "モンスター討伐ゲーム　アンチ核家族化",
+      "id": "kwdm",
+      "url": "https://games.kamioda.tokyo/kw/defeatmonster/",
+      "image": "defeatmonster.png"
+    }
+  ]
+}
