@@ -33,35 +33,35 @@ body {
     width: 160px;
 }
 
-    .box > img, .noimage {
-        width: 160px;
-        height: 160px;
-    }
+.box > img, .noimage {
+    width: 160px;
+    height: 160px;
+}
 
 .title {
     margin-top: 1rem;
 }
 
-    .title > p {
-        margin: 0;
-    }
+.title > p {
+    margin: 0;
+}
 
 #producer {
     background-color: rgba(255,255,255,0.88);
     padding: 1rem;
 }
 
-    #producer dt {
-        margin: 1rem 0;
-    }
+#producer dt {
+    margin: 1rem 0;
+}
 
-    #producer dd {
-        margin: 0.15rem 0;
-    }
+#producer dd {
+    margin: 0.15rem 0;
+}
 
-    #producer p {
-        margin: 0;
-    }
+#producer p {
+    margin: 10px;
+}
 
 #version {
     background-color: rgba(255, 255, 255, 0.88);
