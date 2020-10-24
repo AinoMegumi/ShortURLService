@@ -15,7 +15,7 @@
         .then(r => r.json()).then(response => {
             const items = response["redirects"].map(r => m("section", { "class": "box" }, [
                 (("image" in r) ? m("img", { "src": `./pic/${r["image"]}` }) : m("div", { "class": "noimage" })),
-                m("a", { "href": `./${r["id"]}` }, m("article", { "class": "title" }, (Array.isArray(r["name"])) ? r["name"].map(mu => m("p", mu)) : m("p", r["name"])))
+                m("a", { "href": `./profile/${r["id"]}` }, m("article", { "class": "title" }, (Array.isArray(r["name"])) ? r["name"].map(mu => m("p", mu)) : m("p", r["name"])))
             ]));
             ready(() => {
                 m.mount(document.getElementById("services"), { view: () => m("div", { "class": "main_container" }, items) });
