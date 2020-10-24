@@ -26,7 +26,7 @@ namespace ShortURLService.Controllers
         [HttpGet("/{id}")]
         public IActionResult RedirectToService([FromRoute(Name = "id")] string ServiceID)
         {
-            List<RedirectInfo> Infos = JsonConvert.DeserializeObject<RedirectInfos>(System.IO.File.ReadAllText("./wwwroot/config/redirect.json"));
+            List<RedirectInformation> Infos = JsonConvert.DeserializeObject<RedirectInformations>(System.IO.File.ReadAllText("./wwwroot/config/redirect.json"));
             if (!Infos.Exists(r => r.ID == ServiceID)) return Redirect("/error/404");
             return Redirect(Infos.Find(r => r.ID == ServiceID).RedirectURL);
         }
