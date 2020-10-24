@@ -1,0 +1,36 @@
+﻿@model ShortURLService.Models.ProfileModel
+
+@{
+    ViewData["Title"] = Model.RedirectInfo.SiteName;
+}
+
+<div class="container">
+    <section id="producer">
+        <h1>@Model.RedirectInfo.SiteName</h1>
+        @{
+            if (Model.RedirectInfo.ImageFileName == null)
+            {
+                <img src="~/pic/no_image.png" align="left" style="margin-right:10px;" />
+            }
+            else
+            {
+                <img src="~/pic/@Model.RedirectInfo.ImageFileName" align="left" style="margin-right:10px;" />
+            }
+        }
+        <div>
+            <h5>サイトの管理運営担当</h5>
+            <p>@Html.Raw(Model.RedirectInfo.Administrator.Replace("\n", "</p><p>"))</p>
+            <h5>短縮ＵＲＬ</h5>
+            <!--<p>https://meigetsu.jp/@Model.RedirectInfo.ID</p>-->
+            <p><a href="@Model.RedirectInfo.RedirectURL">https://meigetsu.jp/@Model.RedirectInfo.ID</a></p>
+        </div>
+        <br clear="left" />
+        @{
+            if (Model.RedirectInfo.Description != null)
+            {
+                <p>@Html.Raw(Model.RedirectInfo.Description.Replace("\n", "</p><p>"))</p>
+            }
+        }
+        <p></p>
+    </section>
+</div>

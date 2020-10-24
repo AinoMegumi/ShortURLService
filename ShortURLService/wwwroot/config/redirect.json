@@ -3,19 +3,24 @@
     {
       "name": "あまいろパステル開発者ページ",
       "id": "amapas",
-      "url": "https://amairopastel.meigetsu.jp/"
+      "url": "https://amairopastel.meigetsu.jp/",
+      "admin": "Meigetsu Soft"
     },
     {
       "name": "ときめきアイドルスコアランキング",
       "id": "tokidol",
       "url": "https://www.tokidolranking.meigetsu.jp/",
-      "image": "tokidolranking.jpg"
+      "image": "tokidolranking.jpg",
+      "admin": "ときめきアイドルスコアランキング運営\n安藤院生徒会長 / 神御田プロデューサー(Meigetsu Net)",
+      "desc": "ときめきアイドルスコアランキングは、株式会社コナミデジタルエンタテインメントより2018年3月20日にリリースされ、2019年1月15日より完全無料のオフライン版としてリリースされたリズムゲーム「ときめきアイドル」のライブリザルト画面よりスコアを読み取ってランキング化するサービスです。"
     },
     {
       "name": "モンスター討伐ゲーム　アンチ核家族化",
       "id": "kwdm",
       "url": "https://games.kamioda.tokyo/kw/defeatmonster/",
-      "image": "defeatmonster.png"
+      "image": "defeatmonster.png",
+      "admin": "Kamioda Warrior",
+      "desc": "Kamioda Warrior 1st Project\n一人ではできなくても誰かと一緒ならどんなことだってできる\nそう…たとえ凶悪なモンスターを倒すことだって"
     }
   ]
 }
